@@ -32,6 +32,9 @@ public class HomeWork2 {
                     System.out.println("The average of an array is " + getAverageOfNumbers(arrayOfNumbers));
                     break;
                 case 5:
+                    int[] numberArray = {3, 2, 3, 1, 4, 2, 8, 3};
+                    System.out.println("All duplicated values were replaced by 0");
+                    printArray(replaceValues(numberArray));
                     break;
                 case 0:
                     break Cycle;
@@ -58,6 +61,16 @@ public class HomeWork2 {
 
     static double getAverageOfNumbers(int[] array){
         return (double) (sumOfNumbers(array)) / array.length;
+    }
+
+    static int[] replaceValues(int[] array){
+        for(int i = 0; i < array.length; i++){
+            for(int j = array.length - 1; j > i; j--){
+                if(array[j] == array[i])
+                    array[j] = 0;
+            }
+        }
+        return array;
     }
 
     static int[] inputArray(){
