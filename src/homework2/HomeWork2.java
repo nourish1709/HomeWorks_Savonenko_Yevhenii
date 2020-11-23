@@ -43,7 +43,7 @@ public class HomeWork2 {
         }
     }
 
-    static int sumOfNumbers(Integer[] array){
+    static Integer sumOfNumbers(Integer[] array){
         int sum = 0;
         for(int i : array){
             sum += i;
