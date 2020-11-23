@@ -60,8 +60,8 @@ public class HomeWork2 {
         return sum;
     }
 
-    static Double getAverageOfNumbers(Integer[] array){
-        return (double) (sumOfNumbers(array)) / array.length;
+    static Integer getAverageOfNumbers(Integer[] array){
+        return (sumOfNumbers(array)) / array.length;
     }
 
     static Integer[] replaceValues(Integer[] array){
