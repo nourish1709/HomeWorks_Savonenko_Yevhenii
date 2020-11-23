@@ -39,6 +39,9 @@ public class HomeWork2 {
                     break;
                 case 0:
                     break Cycle;
+                default:
+                    System.out.println("Enter the value BETWEEN 0 AND 5 please");
+                    break;
             }
         }
     }
