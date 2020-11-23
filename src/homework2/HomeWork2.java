@@ -51,7 +51,7 @@ public class HomeWork2 {
         return sum;
     }
 
-    static int sumOfPositiveNumbers(Integer[] array){
+    static Integer sumOfPositiveNumbers(Integer[] array){
         int sum = 0;
         for(int i : array){
             if(i > 0)
@@ -60,7 +60,7 @@ public class HomeWork2 {
         return sum;
     }
 
-    static double getAverageOfNumbers(Integer[] array){
+    static Double getAverageOfNumbers(Integer[] array){
         return (double) (sumOfNumbers(array)) / array.length;
     }
 
