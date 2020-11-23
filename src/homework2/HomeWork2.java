@@ -1,6 +1,7 @@
 package homework2;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class HomeWork2 {
@@ -16,23 +17,23 @@ public class HomeWork2 {
                     System.out.println(answer);
                     break;
                 case 2: // sort an array by DESC
-                    int[] intArray = {2, 3, 1, 7, 11};
+                    Integer[] integerArray = {2, 3, 1, 7, 11};
                     System.out.println("Unsorted array:");
-                    printArray(intArray);
-                    Arrays.sort(intArray);
+                    printArray(integerArray);
+                    Arrays.sort(integerArray, Collections.reverseOrder());
                     System.out.println("Sorted array:");
-                    printArray(intArray);
+                    printArray(integerArray);
                     break;
                 case 3: // Sum of positive numbers of array
-                    int[] array = inputArray();
+                    Integer[] array = inputArray();
                     System.out.println("Sum of all positive numbers of array is " + sumOfPositiveNumbers(array));
                     break;
                 case 4: // The average of a list of numbers
-                    int[] arrayOfNumbers = inputArray();
-                    System.out.println("The average of an array is " + getAverageOfNumbers(arrayOfNumbers));
+                    Integer[] arrayOfIntegers = inputArray();
+                    System.out.println("The average of an array is " + getAverageOfNumbers(arrayOfIntegers));
                     break;
                 case 5:
-                    int[] numberArray = {3, 2, 3, 1, 4, 2, 8, 3};
+                    Integer[] numberArray = {3, 2, 3, 1, 4, 2, 8, 3};
                     System.out.println("All duplicated values were replaced by 0");
                     printArray(replaceValues(numberArray));
                     break;
@@ -42,7 +43,7 @@ public class HomeWork2 {
         }
     }
 
-    static int sumOfNumbers(int[] array){
+    static int sumOfNumbers(Integer[] array){
         int sum = 0;
         for(int i : array){
             sum += i;
@@ -50,7 +51,7 @@ public class HomeWork2 {
         return sum;
     }
 
-    static int sumOfPositiveNumbers(int[] array){
+    static int sumOfPositiveNumbers(Integer[] array){
         int sum = 0;
         for(int i : array){
             if(i > 0)
@@ -59,24 +60,24 @@ public class HomeWork2 {
         return sum;
     }
 
-    static double getAverageOfNumbers(int[] array){
+    static double getAverageOfNumbers(Integer[] array){
         return (double) (sumOfNumbers(array)) / array.length;
     }
 
-    static int[] replaceValues(int[] array){
+    static Integer[] replaceValues(Integer[] array){
         for(int i = 0; i < array.length; i++){
             for(int j = array.length - 1; j > i; j--){
-                if(array[j] == array[i])
+                if(array[j].equals(array[i]))
                     array[j] = 0;
             }
         }
         return array;
     }
 
-    static int[] inputArray(){
+    static Integer[] inputArray(){
         System.out.println("\nHow many numbers do you want to enter?");
         int num = input.nextInt();
-        int[] array = new int[num];
+        Integer[] array = new Integer[num];
         System.out.println("Enter an array of numbers please..");
         for (int i = 0 ; i < num; i++ ) {
             array[i] = input.nextInt();
@@ -84,7 +85,7 @@ public class HomeWork2 {
         return array;
     }
 
-    static void printArray(int[] array){
+    static void printArray(Integer[] array){
         for(int i : array){
             System.out.print(i + " ");
         }
