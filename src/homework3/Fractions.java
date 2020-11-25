@@ -13,9 +13,6 @@ public class Fractions {
         }
 
         setTwoParts(number);
-        /*System.out.println("Double Number: " + number);
-        System.out.println("Integer Part: " + integerPart);
-        System.out.println("Fractional Part: " + fractionalPart);*/
     }
 
     private void setTwoParts(double number){
@@ -66,7 +63,6 @@ public class Fractions {
 
     public double turnInOneNumber(){
         double number;
-        //double number = fraction.integerPart + (Math.abs(fraction.fractionalPart) / Math.pow(10, Math.floor((Math.log10(Math.abs(fraction.fractionalPart)) + 1))));
         number = Math.abs(fractionalPart);
         while (number >= 1){
             number /= 10;
