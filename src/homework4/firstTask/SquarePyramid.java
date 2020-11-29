@@ -1,4 +1,4 @@
-package homework4;
+package homework4.firstTask;
 
 public class SquarePyramid extends SpaceShape implements AreaMeasurable, VolumeMeasurable{
     private final double[] vertex = new double[3];

@@ -1,4 +1,4 @@
-package homework4;
+package homework4.firstTask;
 
 public abstract class PlaneShape extends Shape implements PerimeterMeasurable, AreaMeasurable{
     @Override

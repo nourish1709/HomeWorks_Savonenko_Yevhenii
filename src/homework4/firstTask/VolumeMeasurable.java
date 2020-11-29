@@ -1,4 +1,4 @@
-package homework4;
+package homework4.firstTask;
 
 public interface VolumeMeasurable {
     double getVolume();

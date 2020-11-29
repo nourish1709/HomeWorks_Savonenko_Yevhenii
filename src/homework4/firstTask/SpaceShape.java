@@ -1,7 +1,4 @@
-package homework4;
-
-import java.util.ArrayList;
-import java.util.List;
+package homework4.firstTask;
 
 public abstract class SpaceShape extends Shape implements AreaMeasurable, VolumeMeasurable{
     @Override

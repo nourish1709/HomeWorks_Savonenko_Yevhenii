@@ -1,4 +1,4 @@
-package homework4;
+package homework4.firstTask;
 
 public class Rectangle extends PlaneShape implements PerimeterMeasurable, AreaMeasurable {
     private final double[] vertex = new double[2];

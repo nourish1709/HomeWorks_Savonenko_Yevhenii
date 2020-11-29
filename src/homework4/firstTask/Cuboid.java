@@ -1,4 +1,4 @@
-package homework4;
+package homework4.firstTask;
 
 public class Cuboid extends SpaceShape implements AreaMeasurable, VolumeMeasurable{
     private final double[] vertex = new double[3];
