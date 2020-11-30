@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MyList<T extends Number & Comparable<T>>{
+public class MyList<T extends Comparable<T>>{
     private final List<T> tArrayList = new ArrayList<>();
 
     public void add(T t){
@@ -27,7 +27,7 @@ public class MyList<T extends Number & Comparable<T>>{
     public String toString() {
         System.out.print("ArrayList from generic class: \n\t");
         for(T t : this.tArrayList) {
-            System.out.print(t + "; ");
+            System.out.print(t + " ");
         }
         return "\n";
     }
