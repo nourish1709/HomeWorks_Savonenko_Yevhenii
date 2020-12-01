@@ -19,12 +19,28 @@ public class Homework5 {
         stringList.add("Dance");
 
         System.out.println(doubleList);
+        System.out.println("The largest element of the arrayList with numbers is: " + doubleList.getLargest());
+        System.out.println("The smallest element of the arrayList with numbers is: " + doubleList.getSmallest());
+        System.out.println();
+
         System.out.println(stringList);
+        System.out.println("The largest element of the arrayList with strings is: " + stringList.getLargest());
+        System.out.println("The smallest element of the arrayList with strings is: " + stringList.getSmallest());
+        System.out.println();
 
-        System.out.println("The largest element of the arrayList is: " + doubleList.getLargest());
-        System.out.println("The smallest element of the arrayList is: " + doubleList.getSmallest());
+        Float[] doubles = new Float[]{4.4535f, -456.12f, 6.085E2f, 84.12378f, 32.141f, -753.2153f};
+        String[] strings = new String[]{"Random", "Access", "Memories -", "Daft", "Punk"};
 
-        System.out.println("The largest element of the arrayList is: " + stringList.getLargest());
-        System.out.println("The smallest element of the arrayList is: " + stringList.getSmallest());
+        GenericClass<Float> floatGenericClass = new GenericClass<>(doubles);
+        GenericClass<String> stringGenericClass = new GenericClass<>(strings);
+
+        System.out.println(floatGenericClass);
+        System.out.println("The highest element of the array with is: " + floatGenericClass.getHighest());
+        System.out.println("The lowest element of the array is: " + floatGenericClass.getLowest());
+        System.out.println();
+
+        System.out.println(stringGenericClass);
+        System.out.println("The highest element of the array with is: " + stringGenericClass.getHighest());
+        System.out.println("The lowest element of the array is: " + stringGenericClass.getLowest());
     }
 }
