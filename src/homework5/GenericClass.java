@@ -1,8 +1,5 @@
 package homework5;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class GenericClass<T extends Comparable<T>> {
     private final T[] tArray;
 

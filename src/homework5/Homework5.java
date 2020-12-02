@@ -2,8 +2,23 @@ package homework5;
 
 public class Homework5 {
     public static void main(String[] args) {
-        MyList<Double> doubleList = new MyList<>();
-        MyList<String> stringList = new MyList<>();
+
+        // First task
+        MyList<Float> floatList = new MyList<>();
+        floatList.add(645.45f);
+        floatList.add(-45.12f);
+        floatList.add(-0.245E2f);
+        floatList.add(0.453E3f);
+        floatList.add(48563.4512f);
+        floatList.add(-45.1596f);
+        System.out.println(floatList);
+        System.out.println("The largest element of the arrayList numbers of type float is: " + floatList.getLargest());
+        System.out.println("The smallest element of the arrayList numbers of type float numbers is: " + floatList.getSmallest());
+        System.out.println();
+
+        // Second task
+        MyListModified<Double> doubleList = new MyListModified<>();
+        MyListModified<String> stringList = new MyListModified<>();
 
         doubleList.add(25.64);
         doubleList.add(782.12);
@@ -28,6 +43,7 @@ public class Homework5 {
         System.out.println("The smallest element of the arrayList with strings is: " + stringList.getSmallest());
         System.out.println();
 
+        // Third task
         Float[] doubles = new Float[]{4.4535f, -456.12f, 6.085E2f, 84.12378f, 32.141f, -753.2153f};
         String[] strings = new String[]{"Random", "Access", "Memories -", "Daft", "Punk"};
 
