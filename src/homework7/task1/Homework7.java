@@ -1,4 +1,4 @@
-package homework7;
+package homework7.task1;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -31,7 +31,7 @@ public class Homework7 {
         System.out.print("All letters of the string object and the amount of their appearance:\n\t");
         for (Character c : map.keySet()) {
             if (Character.isLetter(c)) {
-                System.out.print(c + "=" + map.get(c) + "\t");
+                //System.out.print(c + "=" + map.get(c) + "\t");
                 sumOfLetters += map.get(c);
             }
             if (Character.isSpaceChar(c)) {
