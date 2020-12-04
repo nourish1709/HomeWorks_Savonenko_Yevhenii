@@ -51,7 +51,7 @@ public class ArrayListTasks {
         task11(longs);
         task12(integers, 2, 5);
         task13(strings, strings);
-        task14(longs, 0, 4, -746L, 1564856L);
+        task14(longs, 0, 4);
         task15(integers, new ArrayList<Integer>(Arrays.asList(-456, 541, -8465654, 12685, 6515)));
         task16(doubles);
         task17(strings, new ArrayList<String>(Arrays.asList("nike", "condition", "vetements")));
@@ -260,15 +260,14 @@ public class ArrayListTasks {
         System.out.println("");
     }
 
-    private <T> void task14(ArrayList<T> arrayList, int first, int second, T value1, T value2) {
+    private <T> void task14(ArrayList<T> arrayList, int first, int second) {
         System.out.println("14. Swap two elements in an array list");
         System.out.print("An original array list:\n\t");
         for (T t : arrayList) {
             System.out.print(t + " ");
         }
-        arrayList.set(first, value1);
-        arrayList.set(second, value2);
-        System.out.print("\nSwap the element " + first + " with " + value1 + " and the element " + second + " with " + value2 + ". The result array list after swapping:\n\t");
+        Collections.swap(arrayList, first, second);
+        System.out.print("\nThe result array list:\n\t");
         for (T t : arrayList) {
             System.out.print(t + " ");
         }
