@@ -25,7 +25,7 @@ public class Homework7 {
     }
 
     public static void getWords(String file) {
-        String[] words = file.split("[^A-Za-zА-Яа-я]");
+        String[] words = file.split("((?<![A-Za-zА-Яа-я])-(?![A-Za-zА-Яа-я])|-(?![A-Za-zА-Яа-я])|(?<![A-Za-zА-Яа-я])-|[ .,!@#$%^&*()?\\[\\]/\\\'\";:\r\t\n\\v\\f\0\\d\\s])");
 
         for (String word : words) {
             if (map.containsKey(word)) {
@@ -42,6 +42,7 @@ public class Homework7 {
         System.out.println("\nThe longest word and the number of its appearances:\t\t" + theLongestWord.getKey() + ": " + theLongestWord.getValue());
         System.out.println("The smallest word and the number of its appearances:\t" + theSmallestWord.getKey() + ": " + theSmallestWord.getValue());
         System.out.print("\nAll words of the string object and the amount of their appearance:\n\t");
+        //System.out.println("\n" + map);
     }
 
     public static void findMaxAndMin() {
