@@ -28,7 +28,7 @@ public class Homework8 {
             }
             return false;
         }).filter(car -> {
-            if (car.getYear() < 2018) {
+            if (car.getYear() >= 2018) {
                 before2018.add(car);
                 return true;
             }
