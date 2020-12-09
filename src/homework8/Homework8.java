@@ -11,7 +11,7 @@ public class Homework8 {
 
         List<Car> cars = new ArrayList<>();
         List<Car> teslaOrAudi = new ArrayList<>();
-        List<Car> before2018 = new ArrayList<>();
+        List<Car> after2018 = new ArrayList<>();
         List<Car> smallMileage = new ArrayList<>();
         List<Car> carsDesc = new ArrayList<>();
 
@@ -29,7 +29,7 @@ public class Homework8 {
             return false;
         }).filter(car -> {
             if (car.getYear() >= 2018) {
-                before2018.add(car);
+                after2018.add(car);
                 return true;
             }
             else {
@@ -57,17 +57,17 @@ public class Homework8 {
             System.out.println("\t" + car);
         }
 
-        System.out.println("\nTesla and Audi created before 2018:");
-        for (Car car : before2018) {
+        System.out.println("\nTesla and Audi created after 2018:");
+        for (Car car : after2018) {
             System.out.println("\t" + car);
         }
 
-        System.out.println("\nTesla and Audi created before 2018 with a mileage less than 40 000:");
+        System.out.println("\nTesla and Audi created after 2018 with a mileage less than 40 000:");
         for (Car car : smallMileage) {
             System.out.println("\t" + car);
         }
 
-        System.out.println("\nTesla and Audi created before 2018 with a mileage less than 40 000 ordered by price in descending order:");
+        System.out.println("\nTesla and Audi created after 2018 with a mileage less than 40 000 ordered by price in descending order:");
         for (Car car : carsDesc) {
             System.out.println("\t" + car);
         }
